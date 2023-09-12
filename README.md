@@ -29,7 +29,7 @@ $ curl -X PUT -H "Content-Type: application/json" -d '{"name": "jotaro"}' http:/
 $ {"name": "jotaro", "id": 1}
 ```
 
-### To update a saved user(PUT)
+### To delete a saved user(DELETE)
 <br/>
 <br/>
 ```
@@ -44,30 +44,14 @@ $ {}
 // using id gives you back a single using with the id
 $ curl http://host:5000/api/1
 $ {"name": "frank", "id": 1}
-
 // using name returns a list if multiple users bear the name and returns a single object
 // if only a single user bears it
 // e.g if only a user has that name
 $ curl http://host:5000/api/frank
 $ {"name": "frank", "id": 1}
-
 // if multiple users bear that name
 $ curl http://host:5000/api/frank
 $ [{"name": "frank", "id": 1}, {"name": "frank", "id": 2}]
 ```
 <br/>
 <br/>
-### To update a saved user(PUT)
-```
-$ curl -X PUT -H "Content-Type: application/json" -d '{"name": "jotaro"}' http://host:5000/api/1
-$ {"name": "jotaro", "id": 1}
-```
-
-### To delete a saved user(DELETE)
-<br/>
-<br/>
-```
-$ curl -X DELETE -H http://host:5000/api
-$ {}
-```
-
