@@ -28,7 +28,6 @@ $ {"name": "frank", "id": 1}
 $ curl -X PUT -H "Content-Type: application/json" -d '{"name": "jotaro"}' http://host:5000/api/1
 $ {"name": "jotaro", "id": 1}
 ```
-
 ### To delete a saved user(DELETE)
 ```
 $ curl -X DELETE -H http://host:5000/api
