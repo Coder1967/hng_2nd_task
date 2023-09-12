@@ -30,16 +30,12 @@ $ {"name": "jotaro", "id": 1}
 ```
 
 ### To delete a saved user(DELETE)
-<br/>
-<br/>
 ```
 $ curl -X DELETE -H http://host:5000/api
 $ {}
 ```
 
 ### To get a saved user(GET)
-<br/>
-<br/>
 ```
 // With the 'GET' verb, either name or id can be used to read a user
 // using id gives you back a single using with the id
