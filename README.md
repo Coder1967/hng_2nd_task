@@ -23,6 +23,19 @@ hng_2nd_task$ python3 -m api.app
 $ curl -X POST -H "Content-Type: application/json" -d '{"name": "frank"}' http://host:5000/api
 $ {"name": "frank", "id": 1}
 ```
+### To update a saved user(PUT)
+```
+$ curl -X PUT -H "Content-Type: application/json" -d '{"name": "jotaro"}' http://host:5000/api/1
+$ {"name": "jotaro", "id": 1}
+```
+
+### To update a saved user(PUT)
+<br/>
+<br/>
+```
+$ curl -X DELETE -H http://host:5000/api
+$ {}
+```
 <br/>
 <br/>
 ### To get a saved user(GET)
@@ -50,7 +63,7 @@ $ curl -X PUT -H "Content-Type: application/json" -d '{"name": "jotaro"}' http:/
 $ {"name": "jotaro", "id": 1}
 ```
 
-### To update a saved user(PUT)
+### To delete a saved user(DELETE)
 <br/>
 <br/>
 ```
