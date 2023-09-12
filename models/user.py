@@ -23,8 +23,12 @@ class User(Base):
 
     def to_dict(self, save_fs=None):
         """returns a dictionary containing all keys/values of the instance"""
+        id = self.user_id
+        del self.user_id
+        self.id = id
         new_dict = self.__dict__.copy()
-        new_dict["__class__"] = self.__class__.__name__
+        if new_dict.get("__class__"):
+            del new_dict["__class__"]
         if "_sa_instance_state" in new_dict:
             del new_dict["_sa_instance_state"]
         return new_dict
