@@ -49,9 +49,10 @@ $ [{"name": "frank", "id": 1}, {"name": "frank", "id": 2}]
 $ curl -X PUT -H "Content-Type: application/json" -d '{"name": "jotaro"}' http://host:5000/api/1
 $ {"name": "jotaro", "id": 1}
 ```
-<br/>
-<br/>
+
 ### To update a saved user(PUT)
+<br/>
+<br/>
 ```
 $ curl -X DELETE -H http://host:5000/api
 $ {}
