@@ -53,6 +53,7 @@ $ [{"name": "frank", "id": 1}, {"name": "frank", "id": 2}]
 ```
 
 ## Dependencies
+```
 blinker==1.6.2
 cffi==1.15.1
 click==8.1.7
@@ -70,3 +71,4 @@ SQLAlchemy==2.0.20
 typing-extensions==4.7.1
 werkzeug==2.3.7
 zipp==3.16.2
+```
