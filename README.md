@@ -44,14 +44,16 @@ $ {}
 // using id gives you back a single using with the id
 $ curl http://host:5000/api/1
 $ {"name": "frank", "id": 1}
+```
+```
 // using name returns a list if multiple users bear the name and returns a single object
 // if only a single user bears it
 // e.g if only a user has that name
 $ curl http://host:5000/api/frank
 $ {"name": "frank", "id": 1}
+```
+```
 // if multiple users bear that name
 $ curl http://host:5000/api/frank
 $ [{"name": "frank", "id": 1}, {"name": "frank", "id": 2}]
 ```
-<br/>
-<br/>
