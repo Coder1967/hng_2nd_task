@@ -30,7 +30,7 @@ $ {"name": "jotaro", "id": 1}
 ```
 ### To delete a saved user(DELETE)
 ```
-$ curl -X DELETE -H http://host:5000/api
+$ curl -X DELETE -H http://host:5000/api/1
 $ {}
 ```
 
